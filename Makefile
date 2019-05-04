@@ -1,8 +1,9 @@
 format:
 	goimports  -l -w .
 build: format
-	goreleaser release --snapshot --rm-dist
-	./dist/darwin_amd64/caddy -plugins > plugins.txt
-	./dist/darwin_amd64/caddy -version > version.txt
+	goreleaser release --parallelism=12 --snapshot --rm-dist
+	./dist/darwin_amd64/caddy -version > README.txt
+	echo "" >> README.txt
+	./dist/darwin_amd64/caddy -plugins >> README.txt
 publish: build
-	goreleaser release --rm-dist
+	goreleaser release --parallelism=12 --rm-dist

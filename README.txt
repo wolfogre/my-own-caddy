@@ -1,3 +1,5 @@
+Caddy v1.0.0 (h1:KI6RPGih2GFzWRPG8s9clKK28Ns4ZlVMKR/v7mxq6+c=)
+
 Server types:
   http
 
