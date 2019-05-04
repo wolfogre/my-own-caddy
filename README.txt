@@ -14,6 +14,7 @@ Other plugins:
   http.browse
   http.cache
   http.errors
+  http.expires
   http.expvar
   http.ext
   http.fastcgi

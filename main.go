@@ -5,6 +5,7 @@ import (
 	// plug in plugins here, for example:
 	// _ "import/path/here"
 	_ "github.com/aablinov/caddy-geoip"
+	_ "github.com/epicagency/caddy-expires"
 	_ "github.com/nicolasazrak/caddy-cache"
 )
 
