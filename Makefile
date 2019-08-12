@@ -1,5 +1,5 @@
 format:
-	goimports  -l -w .
+	goimports -l -w .
 build: format
 	goreleaser release --parallelism=12 --snapshot --rm-dist
 	./dist/darwin_amd64/caddy -version > README.txt

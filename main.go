@@ -6,6 +6,7 @@ import (
 	// _ "import/path/here"
 	_ "github.com/aablinov/caddy-geoip"     // http.genip
 	_ "github.com/epicagency/caddy-expires" // http.expire
+	_ "github.com/miekg/caddy-prometheus"   // http.prometheus
 	_ "github.com/nicolasazrak/caddy-cache" // http.cache
 )
 
