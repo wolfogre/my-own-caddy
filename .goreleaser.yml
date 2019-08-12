@@ -3,6 +3,9 @@
 project_name: caddy
 before:
   hooks:
+    - rm -f go.mod go.sum
+    - go mod init caddy
+    - go mod tidy
 builds:
 - env:
     - CGO_ENABLED=0
