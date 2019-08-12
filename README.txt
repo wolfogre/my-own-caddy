@@ -1,4 +1,4 @@
-Caddy v1.0.0 (h1:KI6RPGih2GFzWRPG8s9clKK28Ns4ZlVMKR/v7mxq6+c=)
+Caddy v1.0.1 (h1:oor6ep+8NoJOabpFXhvjqjfeldtw1XSzfISVrbfqTKo=)
 
 Server types:
   http
@@ -28,6 +28,7 @@ Other plugins:
   http.markdown
   http.mime
   http.pprof
+  http.prometheus
   http.proxy
   http.push
   http.redir
