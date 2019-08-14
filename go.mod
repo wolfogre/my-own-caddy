@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/aablinov/caddy-geoip v0.0.0-20190710083220-6705babb56ca
-	github.com/caddyserver/caddy v1.0.1
+	github.com/caddyserver/caddy v1.0.2
 	github.com/epicagency/caddy-expires v1.1.1
 	github.com/mmcloughlin/geohash v0.9.0 // indirect
 	github.com/nicolasazrak/caddy-cache v0.3.4
