@@ -1,6 +1,6 @@
 module caddy
 
-go 1.12
+go 1.13
 
 require (
 	github.com/aablinov/caddy-geoip v0.0.0-20190820062741-c06787a76821
