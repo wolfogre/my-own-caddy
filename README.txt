@@ -13,6 +13,7 @@ Other plugins:
   http.bind
   http.browse
   http.cache
+  http.cors
   http.errors
   http.expires
   http.expvar
