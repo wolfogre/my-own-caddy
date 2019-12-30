@@ -1,6 +1,4 @@
 tidy:
-	rm -rf go.mod go.sum
-	go mod init caddy
 	go mod tidy -v
 build:
 	goreleaser release --parallelism=12 --snapshot --rm-dist
