@@ -1,4 +1,4 @@
-Caddy v1.0.4 (h1:wwuGSkUHo6RZ3oMpeTt7J09WBB87X5o+IZN4dKehcQE=)
+Caddy v1.0.5 (h1:5B1Hs0UF2x2tggr2X9jL2qOZtDXbIWQb9YLbmlxHSuM=)
 
 Server types:
   http
