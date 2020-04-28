@@ -7,5 +7,8 @@ build:
 	go run main.go
 	./readme.sh $(VERSION)
 	git diff HEAD --quiet || exit 1
+	tar czvf dist/caddy_$(VERSION)_darwin_amd64.tar.gz dist/caddy_$(VERSION)_darwin_amd64
+	tar czvf dist/caddy_$(VERSION)_linux_amd64.tar.gz dist/caddy_$(VERSION)_darwin_amd64
+	tar czvf dist/caddy_$(VERSION)_windows_amd64.tar.gz dist/caddy_$(VERSION)_darwin_amd64
 publish: build
-	hub release create -a dist/caddy_$(VERSION)_darwin_amd64 -a dist/caddy_$(VERSION)_linux_amd64 -a dist/caddy_$(VERSION)_windows_amd64 -m v$(VERSION) v$(VERSION)
+	hub release create -a dist/caddy_$(VERSION)_darwin_amd64.tar.gz -a dist/caddy_$(VERSION)_linux_amd64.tar.gz -a dist/caddy_$(VERSION)_windows_amd64.tar.gz -m v$(VERSION) v$(VERSION)
