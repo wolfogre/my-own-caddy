@@ -2,7 +2,7 @@
 
 set -e
 
-C="dist/caddy_darwin_amd64/caddy"
+C="dist/caddy_$1_darwin_amd64/caddy"
 
 {
  echo "# My Own Caddy"

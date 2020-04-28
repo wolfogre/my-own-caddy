@@ -65,7 +65,7 @@ func main() {
 		if platform.OS == "windows" {
 			ext = ".exe"
 		}
-		output := fmt.Sprintf("dist/caddy_%v_%v/caddy%v", platform.OS, platform.Arch, ext)
+		output := fmt.Sprintf("dist/caddy_%s_%v_%v/caddy%v", myOwnCaddyVersion, platform.OS, platform.Arch, ext)
 		err := builder.Build(context.Background(), output)
 		if err != nil {
 			panic(err)
