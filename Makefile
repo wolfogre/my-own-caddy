@@ -1,5 +1,4 @@
 VERSION=$(shell go run main.go -version)
-COMMIT=$(shell git log -n 1 --format=format:'%h')
 
 tidy:
 	go mod tidy -v
@@ -15,4 +14,5 @@ build: tidy
 	cd dist/caddy_$(VERSION)_windows_amd64 && tar czvf ../caddy_$(VERSION)_windows_amd64.tar.gz *
 release: build
 	git diff HEAD --quiet || exit 1
-	hub release create -a dist/caddy_$(VERSION)_darwin_amd64.tar.gz -a dist/caddy_$(VERSION)_linux_amd64.tar.gz -a dist/caddy_$(VERSION)_windows_amd64.tar.gz -m v$(VERSION) -t $(COMMIT) v$(VERSION)
+	git push origin master
+	hub release create -a dist/caddy_$(VERSION)_darwin_amd64.tar.gz -a dist/caddy_$(VERSION)_linux_amd64.tar.gz -a dist/caddy_$(VERSION)_windows_amd64.tar.gz -m v$(VERSION) v$(VERSION)
