@@ -8,4 +8,4 @@ build:
 	./readme.sh
 	git diff HEAD --quiet || exit 1
 publish: build
-	hub release create -a dist/caddy_darwin_amd64 -m v$(VERSION) v$(VERSION)
+	hub release create -a dist/caddy_$(VERSION)_darwin_amd64 -m v$(VERSION) v$(VERSION)
